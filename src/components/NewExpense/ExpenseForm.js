@@ -76,8 +76,8 @@ const ExpenseForm = (props) => {
           <label>Amount</label>
           <input
             type="number"
-            min="0.01"
-            step="0.01"
+            min="0.1"
+            step="0.1"
             value={enteredAmount} // This is two-way-binding.
             onChange={amountChangeHandler}
           />
@@ -87,6 +87,7 @@ const ExpenseForm = (props) => {
           <label>Date</label>
           <input
             type="date"
+            /// Change date min and max to dynamic
             min="2019-01-01"
             max="2022-12-31"
             value={enteredDate} // This is two-way-binding.
